@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'NotoSans', sans-serif;
+    src: url(./font/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    font-family: NotoSans, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    background: url(./img/bg.jpg);
+}
+
+nav {
+    height: 8%;
+    width: 100%;
+    background: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 25px;
+}
+
+h1 {
+    color: rgb(241, 241, 66);
+    display: flex;
+    align-items: center;
+}
+
+.container-span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    color: rgb(241, 241, 66);
+}
