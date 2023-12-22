@@ -1,18 +1,12 @@
+let lastScroll = 0;
 
-const nav = document.querySelector("nav");
-let lastScrollPosition = 0;
-
-window.addEventListener("scroll", () => {
-  const currentScrollPosition = window.scrollY;
-
-  if (currentScrollPosition > lastScrollPosition) {
-    nav.style.transform = "translateY(-100px)";
+window.addEventListener('scroll', () => {
+  if (window.scrollY < lastScroll) {
+    navbar.style.top = 0;
   } else {
-    nav.style.transform = "translateY(0)";
+    navbar.style.top = "-60px";
   }
 
-  lastScrollPosition = currentScrollPosition;
-});
-
-
+  lastScroll = window.scrollY
+})
 

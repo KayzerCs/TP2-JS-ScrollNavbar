@@ -1,45 +1,32 @@
-@font-face {
-    font-family: 'NotoSans', sans-serif;
-    src: url(./font/NotoSans-VariableFont_wdth\,wght.ttf);
-}
-
-* {
-    font-family: NotoSans, sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-    min-height: 200vh;
-    height: 200vh;
-    background: url(./img/bg.jpg);
-    background-repeat: no-repeat;
-}
-
-nav {
-    height: 10%;
-    width: 100%;
-    background: black;
+    min-height: 400vh;
+    margin: 0;
+    color: gold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  li {
+    list-style: none;
+  }
+  nav {
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 25px;
+    grid-template-columns: 40% 60%;
     position: fixed;
-    transition: transform 0.3s ease-in-out;
-}
-
-h1 {
-    color: rgb(241, 241, 66);
-    display: flex;
-    align-items: center;
-}
-
-.container-span {
+    width: 100%;
+    background: rgb(26, 26, 26);
+    height: 60px;
+    top: 0;
+    transition: 0.3s;
+  }
+  h2,
+  ul {
+    margin: 0;
+    padding: 10px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-span {
-    color: rgb(241, 241, 66);
-}
+  }
+  header {
+    background: url(./img/bg.jpg) center/cover;
+    height: 100vh;
+  }
